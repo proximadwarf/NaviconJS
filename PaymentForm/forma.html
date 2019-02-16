@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="jquery.maskedinput.js"></script>
+    <script src="jquery.maskedinput.min.js"></script>
+    <link href="forma.css" rel="stylesheet" />
+    <script src="forma.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
+
+
+</head>
+<body class="text-center">
+    <form class="form-signin">
+        <div class="container">
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-4">
+                    <div class="container myContainer">
+                        <h3 class="h3">Форма оплаты</h3>
+                        <select required class="custom-select" id="typeOfPayer">
+                            <option selected value="">Тип плательщика</option>
+                            <option value="1">Физическое лицо</option>
+                            <option value="2">Юридическое лицо</option>
+                        </select>
+                        <input disabled class="form-control" required type="text" value="НДС" id="NDS" placeholder="НДС">
+                        <select style="display:none" class="custom-select" id="FACE">
+                            <option selected value="">Тип Юр. Лица</option>
+                            <option value="OOO">ООО</option>
+                            <option value="ZAO">ЗАО</option>
+                            <option value="OOO">ОАО</option>
+                            <option value="IP">ИП</option>
+                        </select>
+                        <input class="form-control" required type="text" value="" id="INN" placeholder="ИНН">
+
+
+                        <input class="form-control" required type="text" value="" id="phoneNumber" placeholder="Номер телефона">
+
+                        <input class="form-control" required type="text" value="" id="sum" placeholder="Сумма платежа">
+                        <input disabled class="form-control" required type="text" value="" id="final" placeholder="Итог">
+                        <input style="display:none" type="checkbox" id="simple" />
+                        <span id="simpleSpan"></span>
+                        <div>
+                            <button type="submit" class="btn btn-primary MyButton">Primary</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4"></div>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
